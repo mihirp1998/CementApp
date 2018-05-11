@@ -1,0 +1,764 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mihir.myapplication.Main2Activity$PlaceholderFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout"
+        android:padding="2dp">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Particulars"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Values"
+            android:textStyle="bold"
+            android:paddingLeft="50dp"
+            android:textSize="@dimen/textsize"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    /*
+
+    KLIN FEED RATE
+
+    Tyre chips consumption, Input
+    Other AF
+
+    PC COAL CONSUMPTION
+    KLIN COAL CONSUMPTION
+    PETCOKE CONSUMPTION  IN PC
+    PETCOKE CONSUMPTION IN KILN
+    HCV coal
+    MCV coal
+    LCV coal
+
+
+
+    */
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview"
+        android:layout_below="@id/linearlayout"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/vertilayout"
+            android:padding="2dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horizlayout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="@dimen/textviewsize0"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Klin Feed Rate(TPH)"
+                    android:textColor="#f44242"
+                    android:textStyle="bold"
+                    android:id="@+id/textview"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/mview0"
+                    />
+
+                <EditText
+                    android:id="@+id/e00"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:text="0"
+                    android:textSize="@dimen/textsize" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/mview1"
+                    />
+
+           
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz1layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="@dimen/textviewsize0"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tyre chips consumption, Input (TPH)"
+                    android:textColor="#f44242"
+                    android:textStyle="bold"
+                    android:id="@+id/text1view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m1view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e10"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m1view1"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz2layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="@dimen/textviewsize0"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Other AF (TPH)"
+
+                    android:textStyle="bold"
+                    android:id="@+id/text2view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m2view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e20"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m2view1"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz3layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/text3view"
+                    android:layout_width="@dimen/textviewsize0"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="PC Coal Consumption(TPH)"
+                    android:textColor="#f44242"
+                    android:textSize="@dimen/textsize"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m3view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e30"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m3view1"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz4layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/text4view"
+                    android:layout_width="@dimen/textviewsize0"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="KLIN Coal Consumption (TPH)"
+                    android:textColor="#f44242"
+                    android:textSize="@dimen/textsize"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m4view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e40"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m4view1"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz6layout"
+                android:paddingTop="10dp"
+                android:layout_marginTop="25dp"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+
+                    android:text="Particulars"
+                    android:textStyle="bold"
+                    android:id="@+id/text6view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m6view0"
+                    />
+
+                <TextView
+                    android:id="@+id/col0"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="PC"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m6view14"/>
+                <TextView
+                    android:id="@+id/col01"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Klin"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m6view12"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz5layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/text5view"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="PETCOKE Consumption"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m5view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e50"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m5view1"
+                    />
+
+
+                <EditText
+                    android:id="@+id/e60"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m5view11"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz7layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="HCV Coal (%)"
+                    android:textStyle="bold"
+                    android:id="@+id/text7view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m7view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e70"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m7view13"
+                    />
+                <EditText
+                    android:id="@+id/e06"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m7view1"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz8layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="MCV Coal (%)"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/text8view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m8view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e80"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m8view1"
+                    />
+                <EditText
+                    android:id="@+id/e07"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m8view13"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz9layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="LCV Coal (%)"
+                    android:textStyle="bold"
+                    android:id="@+id/text9view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m9view0"
+                    />
+
+                <EditText
+                    android:id="@+id/e90"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m9view1"
+                    />
+                <EditText
+                    android:id="@+id/e08"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m9view13"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/horiz10layout"
+                android:padding="2dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:id="@+id/text10view"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m10view0"
+                    />
+
+                <TextView
+                    android:id="@+id/e100"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m10view1"
+                    />
+                <TextView
+                    android:id="@+id/e101"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:focusable="false"
+                    android:scrollHorizontally="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/m10view13"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
